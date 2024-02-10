@@ -1,0 +1,11 @@
+[package]
+name = "hello"
+version = "0.1.0"
+edition = "2021"
+authors = ["eggplants <w10776e8w@yahoo.co.jp>"]
+description = "Hello, rust world!"
+
+[dependencies]
+
+[dev-dependencies]
+assert_cmd = "2.0.13"
