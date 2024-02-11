@@ -1,0 +1,12 @@
+[package]
+name = "rcat"
+version = "0.1.0"
+edition = "2021"
+authors = ["eggplants <w10776e8w@yahoo.co.jp>"]
+description = "cat command but implemented in The Rust language"
+
+[dependencies]
+clap = { version = "4.5.0", features = ["derive"] }
+
+[dev-dependencies]
+assert_cmd = "2.0.13"
