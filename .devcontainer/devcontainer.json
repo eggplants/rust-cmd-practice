@@ -1,0 +1,23 @@
+{
+  "name": "Rust",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/rust:1": {},
+    "ghcr.io/devcontainers/features/common-utils:2": {}
+  },
+  "remoteUser": "vscode",
+  "containerUser": "vscode",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "swellaby.vscode-rust-test-adapter",
+        "rust-lang.rust-analyzer",
+        "GitHub.copilot",
+        "oderwat.indent-rainbow"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh"
+      }
+    }
+  }
+}
