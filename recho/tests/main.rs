@@ -15,7 +15,8 @@ fn run_with_no_arg() -> TestResult {
 
 #[test]
 fn run_with_several_posargs() {
-    Command::cargo_bin("recho").unwrap()
+    Command::cargo_bin("recho")
+        .unwrap()
         // .arg("te")
         // .arg("st")
         // .arg("!\n\n\n")

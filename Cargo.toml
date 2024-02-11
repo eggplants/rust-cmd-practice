@@ -1,0 +1,8 @@
+[workspace]
+
+members = [
+    "hello",
+    "rcat",
+    "recho",
+]
+resolver = "2"
