@@ -1,0 +1,35 @@
+name: Test
+
+on:
+  push:
+    branches:
+    - master
+  pull_request:
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        toolchain:
+          # - stable
+          # - beta
+          - nightly
+    steps:
+      - uses: actions/checkout@v4
+      - uses: "dtolnay/rust-toolchain@${{ matrix.toolchain }}"
+        with:
+          components: llvm-tools-preview
+      - uses: taiki-e/install-action@cargo-llvm-cov
+      - uses: paambaati/codeclimate-action@v5.0.0
+        env:
+          CC_TEST_REPORTER_ID: "${{ secrets.CC_TEST_REPORTER_ID }}"
+        with:
+          coverageCommand: |
+            cargo llvm-cov report --lcov --output-path lcov.info
+          coverageLocations: |
+            lcov.info:lcov
+          debug: true
