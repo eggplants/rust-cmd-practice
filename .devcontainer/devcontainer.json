@@ -13,7 +13,8 @@
         "swellaby.vscode-rust-test-adapter",
         "rust-lang.rust-analyzer",
         "GitHub.copilot",
-        "oderwat.indent-rainbow"
+        "oderwat.indent-rainbow",
+        "GitHub.vscode-github-actions"
       ],
       "settings": {
         "terminal.integrated.defaultProfile.linux": "zsh"
