@@ -1,5 +1,15 @@
 # rust-cmd-practice
 
+[![Test](
+  <https://github.com/eggplants/rust-cmd-practice/actions/workflows/test.yml/badge.svg>
+  )](
+  <https://github.com/eggplants/rust-cmd-practice/actions/workflows/test.yml>
+) [![Test Coverage](
+  <https://api.codeclimate.com/v1/badges/d1c2afdb6a4e27a63afd/test_coverage>
+  )](
+  <https://codeclimate.com/github/eggplants/rust-cmd-practice/test_coverage>
+)
+
 My practice codes while reading [Command-Line Rust](https://www.oreilly.com/library/view/command-line-rust/9781098109424/) in [Japanese Edition](https://www.oreilly.co.jp//books/9784814400584/).
 
 ## TODO
