@@ -1,8 +1,4 @@
 [workspace]
 
-members = [
-    "hello",
-    "rcat",
-    "recho",
-]
+members = ["hello", "recho", "rcat", "rhead"]
 resolver = "2"

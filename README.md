@@ -7,7 +7,7 @@ My practice codes while reading [Command-Line Rust](https://www.oreilly.com/libr
 - [x] hello
 - [x] echo
 - [x] cat
-- [ ] head
+- [x] head
 - [ ] wc
 - [ ] uniq
 - [ ] find
